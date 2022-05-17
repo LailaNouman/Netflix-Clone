@@ -1,6 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Component/Home';
+import FavList from './Component/FavList';
+import NavBar from './Component/Navbar';
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,10 +9,11 @@ function App() {
   return (
     <>
     
-      {/* <Routes>
+    <NavBar />
+      <Routes>
         <Route path="/" element={<Home />} />
-      </Routes> */}
-      <Home/>
+        <Route path="favMovie" element={<FavList />} />
+      </Routes>
 
     </>
   );
