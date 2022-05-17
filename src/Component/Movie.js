@@ -31,6 +31,7 @@ export default function Movie (props){
     <ModalMovie show = {show}
      handleClose = {handleClose}
      speMov = {speMov}
+     updateMovie={props.updateMovie}
      />
     }
        </>

@@ -8,7 +8,7 @@ export default function MovieList (props){
      props.movie.map(movie => {
          return (
              <>
-             <Movie movie = {movie}/>
+             <Movie movie = {movie} updateMovie={props.updateMovie} />
              </>
          )
      })
